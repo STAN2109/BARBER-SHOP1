@@ -1,0 +1,91 @@
+header {
+  background: url("imag/shop.jpg") ;
+  background-size: cover;
+  height: 15%;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+<style>
+
+    body {
+        background: url("imag/fondo.jpg") no-repeat center center fixed;
+        background-size: cover;
+        color: white; /* Agrega esta línea para que el texto sea blanco */
+    }
+
+    header {
+        background: url("imag/shop.jpg") no-repeat center center fixed;
+        background-size: cover;
+        height: 15%;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+    }
+h1 {
+  font-family: 'Woodland'; /* Reemplaza 'TuFuenteAgradable' con el nombre de la fuente que desees */
+  color: #14f5ae; /* Color naranja, puedes cambiarlo según tus preferencias */
+  text-align: center;
+  text-transform: uppercase; /* Convierte el texto a mayúsculas */
+  letter-spacing: 2px; /* Espaciado entre letras */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+    
+
+}
+h3 {
+  font-family: 'TuFuenteAgradable', sans-serif; /* Reemplaza 'TuFuenteAgradable' con el nombre de la fuente que desees */
+  color: #ff8c00; /* Color naranja, puedes cambiarlo según tus preferencias */
+  text-align: center;
+  text-transform: uppercase; /* Convierte el texto a mayúsculas */
+  letter-spacing: 2px; /* Espaciado entre letras */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+}
+nav {
+  /*llamar el menu de navegacion*/
+  float: left;
+  justify-content: center;
+  display: flex;
+  margin: auto 0;
+  text-align: center;
+  width: 100%;
+}
+nav ul {
+  /*lamar el menu y a la lista*/
+  list-style: none;
+}
+
+nav ul li {
+  /*llamar al menu, lists y a los elementos de la lista*/
+  float: left;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 120%;
+}
+
+nav ul li a {
+  /*llamar al menu, lists y a los elementos de la lista y a los links*/
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: rgb(20, 18, 18);
+}
+
+/*EFECTOS*/
+
+
+nav ul li:hover {
+  background: rgb(178, 177, 177);
+}
+.img1 {
+  display: flex;
+  height: 400px;
+}
+.img2 {
+  display: flex;
+  height: 400px;
+}
+h4 {
+  font-size: 1.5em; /* Puedes ajustar el valor según tus preferencias */
+}
+footer {
+  background-color: rgb(143, 141, 143);
+}

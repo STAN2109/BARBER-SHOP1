@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Cita de Barbería</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+	
+#video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    color: white;
+}
+
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="time"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"],
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover,
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        input[type="submit"]:focus,
+        .button:focus {
+            outline: none;
+        }
+
+        .button.secondary {
+            background-color: #ccc;
+        }
+
+        .button.secondary:hover {
+            background-color: #bfbfbf;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+            padding-right: 20px;
+        }
+
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+	<video autoplay muted loop id="video-background">
+		<source src="video.mp4" type="video/mp4">
+		Tu navegador no soporta videos HTML5.
+	  </video>
+	  
+
+<h2>Formulario de Agendamiento de Cita de Barbería</h2>
+
+<form action="/submit_cita" method="post">
+    <div class="column">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefono">Número de teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="fecha">Fecha deseada para la cita:</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <label for="hora">Hora deseada para la cita:</label>
+        <input type="time" id="hora" name="hora" required>
+    </div>
+
+    <div class="column">
+        <label for="servicio">Servicio(s) requerido(s):</label>
+        <input type="text" id="servicio" name="servicio" required>
+
+        <label for="corte">Tipo de corte:</label>
+        <select id="corte" name="corte" required>
+            <option value="">Seleccionar tipo de corte</option>
+            <option value="Corte de pelo">Corte de pelo</option>
+            <option value="Afeitado de barba">Afeitado de barba</option>
+            <option value="Recorte de barba">Recorte de barba</option>
+            <option value="Otros">Otros</option>
+        </select>
+
+        <label for="preferencia">Preferencia de estilista:</label>
+        <input type="text" id="preferencia" name="preferencia">
+
+        <label for="recomendacion">¿Cómo nos conociste?</label>
+        <input type="text" id="recomendacion" name="recomendacion">
+
+        <label for="comentarios">¿Alguna solicitud especial o comentarios adicionales?</label>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+    </div>
+
+    <div class="clear"></div>
+
+    <div class="button-container">
+        <input type="submit" value="Agendar Cita" class="button">
+        <button type="button" class="button secondary">Cancelar</button>
+        <button type="button" class="button secondary">Reiniciar</button>
+    </div>
+</form>
+
+</body>
+</html>
+
+S

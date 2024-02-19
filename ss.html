@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Maquetación </title>
+
+    <style>
+       <style>
+        header {
+            text-align: center;
+        }
+
+        h1 {
+            color: #333; /* Set your desired text color */
+        }
+
+        img {
+            width: 200px; /* Set the desired width for the image */
+            height: 150px; /* Set the desired height for the image */
+            margin-top: 10px; /* Add some top margin to the image */
+        }
+  
+      {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        background-color: #f5f5f5;
+      }
+
+      body {
+        width: 1500px;
+        height: 800px;
+        margin: auto;
+        background-color: #fff;
+      }
+
+      header {
+        width: 1500px;
+        height: 120px;
+        background-color: #ffcc00;
+        text-align: center;
+        padding: 20px;
+        
+      }
+      @keyframes fadeInHeader {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header h1 {
+  animation: fadeInHeader 1s ease-in-out forwards;
+}
+     
+      nav {
+        width: 1500px;
+        height: 40px;
+        text-align: center;
+        background-color: #66ff66;
+      }
+      nav ul li a {
+        display: inline-block;
+        position: relative;
+        animation: moveText 2s linear infinite;
+      }
+
+      @keyframes moveText {
+        0% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(20px); /* Ajusta la distancia que se moverá el texto */
+        }
+        100% {
+          transform: translateX(0);
+        }
+      } 
+    
+
+      main {
+        width: 1500px;
+        height: 700px;
+        background-color: #e6e6e0;
+        overflow: hidden; 
+      }
+
+      section, aside, article {
+        float: left;
+        box-sizing: border-box;
+        padding: 10px;
+        text-align: center;
+        width: 500px; /* Ajusta el ancho de cada sección */
+      }
+
+      section#banner, section#logo, section#login,
+      aside#left, article, aside#right {
+        height: 300px; /* Ajusta la altura de cada sección */
+      }
+      
+
+      section#banner {
+        background-color: #2af3e2;
+      }
+
+      section#logo {
+        background-color: #7aa52a;
+      }
+
+      section#login {
+        background-color: #4b76a7;
+      }
+
+      aside#left {
+        background-color: #573f7c;
+      }
+
+      article {
+        background-color: #b9a2dd;
+      }
+
+      aside#right {
+        background-color: #cd7bce;
+      }
+
+      footer {
+        width: 1500px;
+        height: 70px;
+        background-color: #ff8800;
+        text-align: center;
+        padding: 10px;
+        
+      
+}
+      div.box {
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        margin-bottom: 10px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+
+      img {
+        max-width: 90%;
+        height: auto;
+        display: block;
+        margin: auto;
+        border: 1px solid #ddd;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>"ACADEMIA MILITAR GENERAL MIGUEL ITURRALDE"</h1>
+      <img src="sello.jpg" alt="Descripción de la imagen">
+        
+    </header>
+    <nav>
+      <ul>
+       
+        <li><a href="https://megapalaciodelcelular.com/">VISITANOS</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="banner" class="box">
+        <h2>iPhone 13 (Apple)</h2>
+        <p>Características: A15 Bionic, pantalla Super Retina XDR, sistema de doble cámara. Precio: $700.</p>
+        <img src=".jpg"  width="30%" height="30%" style="object-fit: cover;">
+      </section>
+      <section id="logo" class="box">
+        <h2>Samsung Galaxy S21:</h2>
+        <p>Características: Procesador Exynos 2100 o Snapdragon 888, pantalla Dynamic AMOLED, sistema de triple cámara. Precio: $800.</p>
+        <img src=".jpg"width="50%" height="50%" style="object-fit: cover;">
+      </section>
+      <section id="login" class="box">
+        <h2>Google Pixel 6:</h2>
+        <p>Características: Procesador Google Tensor, pantalla AMOLED, sistema de doble cámara. Precio: $700.</p>
+        <img src=".jpg" width="70%" height="70%" style="object-fit: cover;">
+      </section>
+      <aside id="left" class="box">
+        <h2>OnePlus 9:</h2>
+        <p>Características: Procesador Snapdragon 888, pantalla Fluid AMOLED, sistema de triple cámara. Precio: 600.</p>
+        <img src=".jpg" width="40%" height="40%" style="object-fit: cover;">
+      </aside>
+      <article class="box">
+        <h2>Xiaomi Mi 11:</h2>
+        <p>Características: Procesador Snapdragon 888, pantalla AMOLED, sistema de triple cámara. Precio: $900.</p>
+        <img src="jpg" width="40%" height="40%" style="object-fit: cover;">
+      </article>
+      <aside id="right" class="box">
+        <h2>Sony Xperia 1 III</h2>
+        <p>Características: Procesador Snapdragon 888, pantalla 4K HDR OLED, sistema de triple cámara ZEISS. Precio: $1000.</p>
+        <img src="" width="60%" height="60%" style="object-fit: cover;">
+      </aside>
+    </main>
+    <footer class="box">
+      <p>CONTACTOS: 0969785827, GERENTE:STALIN RAMOS, DIRECCION: CONDADO LA ZAGALITA, CORREO ELECTRONICO:stalinramos2109@gmail.com </p>
+    </footer>
+  </body>
+</html>
